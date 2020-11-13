@@ -35,7 +35,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Plots</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcolor02" aria-controls="navbarcolor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,11 +46,19 @@
                 <span class="sr-only">(current)</span>
             </a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Graphs</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="LatvTemp.html">Latitude vs. Temp.</a>
+                  <a class="dropdown-item" href="LatvHumidity.html">Latitude vs. Humidity</a>
+                  <a class="dropdown-item" href="LatvCloud.html">Latitude vs. Cloudiness</a>
+                  <a class="dropdown-item" href="LatvWind.html">Latitude vs. Wind</a>
+                  <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Comparison</a>
+              </div>
+              </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Graphs</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
+            <a class="nav-link" href="..\resources\index.html">Data</a>
             </li>
         </ul>
         </div>
@@ -62,14 +70,43 @@
         </div>
         <div class="row">
             <div class="col-8">
-                <ul>
                     <img src="tempvslat.png" alt="tempvslat">
 
-                    <p1>This graph shows ...</p1>
-                    
-                </ul>
+                    <p>This graph shows ...</p>
+            </div>
+            <div class="col-4 bg-info">
+                <div class="thumbnail">
+                   <a href="LatvTemp.html"><img src="tempvslat.png" alt="temp-thumbnail" class="img-thumbnail"></a>
+                </div>  
+                <div class="caption">
+                  <h3>Latitude vs. Temperature</h3>
+                </div>
+                <div class="thumbnail">
+                  <a href="LatvHumidity.html"><img src="..\visualizations\humidityvslat.png" alt="humidity-thumbnail" class="img-thumbnail"></a>
+               </div>  
+               <div class="caption">
+                 <h3>Latitude vs. Humidity</h3>
+               </div>
+               <div class="thumbnail">
+                  <a href="LatvCloud.html"><img src="..\visualizations\cloudsvslat.png" alt="cloudiness-thumbnail" class="img-thumbnail"></a>
+                </div>  
+                <div class="caption">
+                    <h3>Latitude vs. Cloudiness</h3>
+                </div>
+                <div class="thumbnail">
+                    <a href="LatvWind.html"><img src="..\visualizations\windvslat.png" alt="wind-thumbnail" class="img-thumbnail"></a>
+                </div>  
+                <div class="caption">
+                    <h3>Latitude vs. Wind</h3>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-8">
+                <p>This graph shows ...</p>
+            </div>
+        </div>
+        
     </div>
   
 

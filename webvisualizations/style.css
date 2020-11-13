@@ -85,6 +85,10 @@
    margin-top: 0;
    margin-bottom: 0.5rem;
  }
+ h3 {
+     color: #45122b;
+     /* color: #010708; */
+ }
  
  p {
    margin-top: 0;

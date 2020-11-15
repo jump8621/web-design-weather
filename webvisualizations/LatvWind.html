@@ -74,7 +74,7 @@
 
                     <p>This graph shows ...</p>
             </div>
-            <div class="col-4 bg-info">
+            <div class="col-4 bg-info" id="gthumbnails">
                 <div class="thumbnail">
                    <a href="LatvTemp.html"><img src="tempvslat.png" alt="temp-thumbnail" class="img-thumbnail"></a>
                 </div>  
@@ -101,14 +101,30 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8">
-                <!-- <p>This graph shows ...</p> -->
-            </div>
-        </div>
-        
+
     </div>
   
+    <div class="d-{md, lg, xl}-none">
+      <nav class="navbar navbar-expand-false navbar-light bg-light"> 
+        <a class="thumbnail" href="LatvTemp.html">
+          <img src="tempvslat.png" width="60" height="60" class="d-inline-block align-top" alt="temp-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvHumidity.html">
+          <img src="..\visualizations\humidityvslat.png" width="60" height="60" class="d-inline-block align-top" alt="Humidity-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvCloud.html">
+          <img src="..\visualizations\cloudsvslat.png" width="60" height="60" class="d-inline-block align-top" alt="cloud-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvWind.html">
+          <img src="..\visualizations\windvslat.png" width="60" height="60" class="d-inline-block align-top" alt="wind-thumbnail">
+          Latitude vs. Temperature
+        </a>
+  
+      </nav>
+    </div>
 
 </body>
 </html>

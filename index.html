@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Data</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Plots</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcolor02" aria-controls="navbarcolor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarcolor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Graphs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="LatvTemp.html">Latitude vs. Temp.</a>
+            <a class="dropdown-item" href="LatvHumidity.html">Latitude vs. Humidity</a>
+            <a class="dropdown-item" href="LatvCloud.html">Latitude vs. Cloudiness</a>
+            <a class="dropdown-item" href="LatvWind.html">Latitude vs. Wind</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="comparison.html">Comparison</a>
+        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="..\resources\index.html">Data</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+
+    <div class="container">
+        <div class="row">
+            <div id="Landing" class="col-12">
+              <h1>Latitude and the Affect on Weather</h1>
+
+            </div>
+        </div>
+
+            <div id="Lat-Map" class="col-8">
+              <img src="..\visualizations\Latitude_zones.png" alt="Latitude-template" class="bg"> 
+              <!-- <img src="..\visualizations\Latitude_zones.png" alt="Latitude-template"> -->
+               </div>
+    </div>
+
+              <div class="row" >
+              <div class="col-8 p-5">
+              <h2>Summary</h2>
+              
+              <p1 class="text-teal" class="front-weight-bolder">The scatter plot graphs shows the latitude and X(weather being compared) for each city on the date the data was pulled. Using a scatter plot allows for 
+              an easy visual and quick analysis on whether a cities latitude(distance from equator) impacts X(the weather). </p1>
+              <hr>
+              <p1 class="text-teal" class="text-break">In these graphs and analysis the study was focused on paying particular attention to how the weather changed the 
+              closer a city got to the equator or a latitude of zero.  The study pulled four different types of weather data- temperature, humidity,
+              windiness, and cloudiness. </p1>
+            </div>
+
+            <div class="col-4 bg-info" id="gthumbnails">
+              <div class="thumbnail">
+                 <a href="LatvTemp.html"><img src="tempvslat.png" alt="temp-thumbnail" class="img-thumbnail"></a>
+              </div>  
+              <div class="caption">
+                <h3>Latitude vs. Temperature</h3>
+              </div>
+              <div class="thumbnail">
+                <a href="LatvHumidity.html"><img src="..\visualizations\humidityvslat.png" alt="humidity-thumbnail" class="img-thumbnail"></a>
+             </div>  
+             <div class="caption">
+               <h3>Latitude vs. Humidity</h3>
+             </div>
+             <div class="thumbnail">
+                <a href="LatvCloud.html"><img src="..\visualizations\cloudsvslat.png" alt="cloudiness-thumbnail" class="img-thumbnail"></a>
+            </div>  
+            <div class="caption">
+             <h3>Latitude vs. Cloudiness</h3>
+            </div>
+            <div class="thumbnail">
+              <a href="LatvWind.html"><img src="..\visualizations\windvslat.png" alt="wind-thumbnail" class="img-thumbnail"></a>
+           </div>  
+           <div class="caption">
+             <h3>Latitude vs. Wind</h3>
+           </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-{md,lg,xl}-none">
+      <nav class="navbar navbar-expand-false navbar-light bg-light"> 
+        <a class="thumbnail" href="LatvTemp.html">
+          <img src="tempvslat.png" width="60" height="60" class="d-inline-block align-top" alt="temp-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvHumidity.html">
+          <img src="..\visualizations\humidityvslat.png" width="60" height="60" class="d-inline-block align-top" alt="Humidity-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvCloud.html">
+          <img src="..\visualizations\cloudsvslat.png" width="60" height="60" class="d-inline-block align-top" alt="cloud-thumbnail">
+          Latitude vs. Temperature
+        </a>
+        <a class="thumbnail" href="LatvWind.html">
+          <img src="..\visualizations\windvslat.png" width="60" height="60" class="d-inline-block align-top" alt="wind-thumbnail">
+          Latitude vs. Temperature
+        </a>
+  
+      </nav>
+    </div>
+
+
+</body>
+
+</html>
+

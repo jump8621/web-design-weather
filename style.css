@@ -161,10 +161,15 @@ p1 {
 }
 
 @media (min-width:576px) {
-  span {
+  #map-bar {
     visibility: hidden;
     display: none;
   }
+}
+
+
+.card-title{
+  color: #1394b5;
 }
 
 /* <div class="container-sm">100% wide until small breakpoint</div>

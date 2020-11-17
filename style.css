@@ -60,19 +60,7 @@
  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
    display: block;
  }
- /* html,
- body,
- header,
- #intro {
-     height: 100%;
- }
- 
- #intro {
-     background: url("https://empoweryourknowledgeandhappytrivia.files.wordpress.com/2014/12/world-climate-map.png");
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover; */
+
   
  body {
    margin: 0;
@@ -164,7 +152,7 @@ p1 {
 
 @media (max-width: 576px) {
   #gthumbnails {
-    visibility: collapse;
+    /* visibility: collapse; */
     display: none;
   }
   img.bg {
@@ -172,51 +160,17 @@ p1 {
   }
 }
 
-
+@media (min-width:576px) {
+  span {
+    visibility: hidden;
+    display: none;
+  }
+}
 
 /* <div class="container-sm">100% wide until small breakpoint</div>
 <div class="container-md">66.6% wide until medium breakpoint</div>
 <div class="container-lg">100% wide until large breakpoint</div>
 <div class="container-xl">100% wide until extra large breakpoint</div> */
-
-
-/* 
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-sm > .table-bordered {
-    border: 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .table-responsive-md {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-md > .table-bordered {
-    border: 0;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .table-responsive-lg {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive-lg > .table-bordered {
-    border: 0;
-  }
-} */
-
 
 
 
@@ -243,11 +197,7 @@ p1 {
      background-size: cover;
  } */
 
- /* #Lat-Map {
-     padding-left: 0%;
-     margin-left: 0%;
- } */
- 
+
  p {
    margin-top: 0;
    margin-bottom: 1rem;

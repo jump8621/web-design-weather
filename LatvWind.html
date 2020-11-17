@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LatitudeVTemp</title>
+    <title>LatitudeVWind</title>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -58,7 +58,7 @@
               </div>
               </li>
             <li class="nav-item">
-            <a class="nav-link" href="..\resources\index.html">Data</a>
+            <a class="nav-link" href="data.html">Data</a>
             </li>
         </ul>
         </div>
@@ -66,69 +66,70 @@
     </nav>
     <div class="container">
         <div class="row">
-            <h1 class="display-4">City Latitude Vs Temperature</h1>
+            <h1 class="display-4">City Latitude Vs Windiness</h1>
         </div>
         <div class="row">
             <div class="col-8">
-                    <img src="tempvslat.png" class="img-fluid" alt="tempvslat">
+                    <img src=".\visualizations\windvslat.png" class="img-fluid" alt="LatvWind">
 
-                    <p>This scatter plot graph shows the latitude and max temperature for each city on the date the data was pulled. Using a scatter plot allows for 
-                      an easy visual and quick analysis on whether a cities latitude(distance from equator) impacts its max temperature.</p>
-                    <p><strong>Analysis:</strong> While the temperatures above 40&#8457 seem to be semi-uniform; only the Northern Hemisphere has max 
-                      temperatures below 40&#8457 on the date pulled.  
+                    <p>This graph shows cities latitude vs their windiness or wind speed in mph.  While
+                      the graph shows slightly more plots of data on the right side of the graph or Northern Hemisphere,
+                      there does not seem to be enough data to show causation.
                     </p>
+                    <hr>
+                    <p>*Interesting note - the only wind speed above 25mph(on the day the data was pulled) is found in the Northern Hemisphere.</p>
             </div>
             <div class="col-4 bg-info" id="gthumbnails">
                 <div class="thumbnail">
-                   <a href="LatvTemp.html"><img src="tempvslat.png" alt="temp-thumbnail" class="img-thumbnail"></a>
+                   <a href="LatvTemp.html"><img src=".\visualizations\tempvslat.png" alt="temp-thumbnail" class="img-thumbnail"></a>
                 </div>  
                 <div class="caption">
                   <h3>Latitude vs. Temperature</h3>
                 </div>
                 <div class="thumbnail">
-                  <a href="LatvHumidity.html"><img src="..\visualizations\humidityvslat.png" alt="humidity-thumbnail" class="img-thumbnail"></a>
+                  <a href="LatvHumidity.html"><img src=".\visualizations\humidityvslat.png" alt="humidity-thumbnail" class="img-thumbnail"></a>
                </div>  
                <div class="caption">
                  <h3>Latitude vs. Humidity</h3>
                </div>
                <div class="thumbnail">
-                  <a href="LatvCloud.html"><img src="..\visualizations\cloudsvslat.png" alt="cloudiness-thumbnail" class="img-thumbnail"></a>
+                  <a href="LatvCloud.html"><img src=".\visualizations\cloudsvslat.png" alt="cloudiness-thumbnail" class="img-thumbnail"></a>
                 </div>  
                 <div class="caption">
                     <h3>Latitude vs. Cloudiness</h3>
                 </div>
                 <div class="thumbnail">
-                    <a href="LatvWind.html"><img src="..\visualizations\windvslat.png" alt="wind-thumbnail" class="img-thumbnail"></a>
+                    <a href="LatvWind.html"><img src=".\visualizations\windvslat.png" alt="wind-thumbnail" class="img-thumbnail"></a>
                 </div>  
                 <div class="caption">
                     <h3>Latitude vs. Wind</h3>
                 </div>
             </div>
         </div>
+
     </div>
   
-    <div class="d-{md,lg,xl}-none">
+    <div class="d-{md, lg, xl}-none">
       <nav class="navbar navbar-expand-false navbar-light bg-light"> 
         <a class="thumbnail" href="LatvTemp.html">
-          <img src="tempvslat.png" width="60" height="60" class="d-inline-block align-top" alt="temp-thumbnail">
+          <img src=".\visualizations\tempvslat.png" width="60" height="60" class="d-inline-block align-top" alt="temp-thumbnail">
           Latitude vs. Temperature
         </a>
         <a class="thumbnail" href="LatvHumidity.html">
-          <img src="..\visualizations\humidityvslat.png" width="60" height="60" class="d-inline-block align-top" alt="Humidity-thumbnail">
+          <img src=".\visualizations\humidityvslat.png" width="60" height="60" class="d-inline-block align-top" alt="Humidity-thumbnail">
           Latitude vs. Temperature
         </a>
         <a class="thumbnail" href="LatvCloud.html">
-          <img src="..\visualizations\cloudsvslat.png" width="60" height="60" class="d-inline-block align-top" alt="cloud-thumbnail">
+          <img src=".\visualizations\cloudsvslat.png" width="60" height="60" class="d-inline-block align-top" alt="cloud-thumbnail">
           Latitude vs. Temperature
         </a>
         <a class="thumbnail" href="LatvWind.html">
-          <img src="..\visualizations\windvslat.png" width="60" height="60" class="d-inline-block align-top" alt="wind-thumbnail">
+          <img src=".\visualizations\windvslat.png" width="60" height="60" class="d-inline-block align-top" alt="wind-thumbnail">
           Latitude vs. Temperature
         </a>
   
       </nav>
     </div>
-
 
 </body>
 </html>
